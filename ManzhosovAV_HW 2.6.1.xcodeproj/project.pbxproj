@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		74D0689B2C92CC12000B0EAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0689A2C92CC12000B0EAC /* AppDelegate.swift */; };
 		74D0689D2C92CC12000B0EAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0689C2C92CC12000B0EAC /* SceneDelegate.swift */; };
-		74D0689F2C92CC12000B0EAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0689E2C92CC12000B0EAC /* ViewController.swift */; };
 		74D068A22C92CC12000B0EAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D068A02C92CC12000B0EAC /* Main.storyboard */; };
 		74D068A42C92CC13000B0EAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74D068A32C92CC13000B0EAC /* Assets.xcassets */; };
 		74D068A72C92CC13000B0EAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D068A52C92CC13000B0EAC /* LaunchScreen.storyboard */; };
+		74D068AF2C92D767000B0EAC /* PersonsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D068AE2C92D767000B0EAC /* PersonsListTableViewController.swift */; };
+		74D068B12C92D95E000B0EAC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D068B02C92D95E000B0EAC /* DetailsViewController.swift */; };
+		74D068B32C92DAA9000B0EAC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D068B22C92DAA9000B0EAC /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		74D068972C92CC12000B0EAC /* ManzhosovAV_HW 2.6.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ManzhosovAV_HW 2.6.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74D0689A2C92CC12000B0EAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74D0689C2C92CC12000B0EAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74D0689E2C92CC12000B0EAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74D068A12C92CC12000B0EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74D068A32C92CC13000B0EAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74D068A62C92CC13000B0EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74D068A82C92CC13000B0EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74D068AE2C92D767000B0EAC /* PersonsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListTableViewController.swift; sourceTree = "<group>"; };
+		74D068B02C92D95E000B0EAC /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		74D068B22C92DAA9000B0EAC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		74D068992C92CC12000B0EAC /* ManzhosovAV_HW 2.6.1 */ = {
 			isa = PBXGroup;
 			children = (
-				74D0689A2C92CC12000B0EAC /* AppDelegate.swift */,
-				74D0689C2C92CC12000B0EAC /* SceneDelegate.swift */,
-				74D0689E2C92CC12000B0EAC /* ViewController.swift */,
-				74D068A02C92CC12000B0EAC /* Main.storyboard */,
-				74D068A32C92CC13000B0EAC /* Assets.xcassets */,
-				74D068A52C92CC13000B0EAC /* LaunchScreen.storyboard */,
+				74D068B42C92DAF0000B0EAC /* Model */,
+				74D068B52C92DB22000B0EAC /* View */,
+				74D068B62C92DB53000B0EAC /* Controller */,
+				74D068B82C92DB9E000B0EAC /* SupportingFile */,
+				74D068B72C92DB81000B0EAC /* Resources */,
 				74D068A82C92CC13000B0EAC /* Info.plist */,
 			);
 			path = "ManzhosovAV_HW 2.6.1";
+			sourceTree = "<group>";
+		};
+		74D068B42C92DAF0000B0EAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74D068B22C92DAA9000B0EAC /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74D068B52C92DB22000B0EAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74D068A02C92CC12000B0EAC /* Main.storyboard */,
+				74D068A52C92CC13000B0EAC /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74D068B62C92DB53000B0EAC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				74D068AE2C92D767000B0EAC /* PersonsListTableViewController.swift */,
+				74D068B02C92D95E000B0EAC /* DetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		74D068B72C92DB81000B0EAC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74D068A32C92CC13000B0EAC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		74D068B82C92DB9E000B0EAC /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				74D0689A2C92CC12000B0EAC /* AppDelegate.swift */,
+				74D0689C2C92CC12000B0EAC /* SceneDelegate.swift */,
+			);
+			path = SupportingFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74D0689F2C92CC12000B0EAC /* ViewController.swift in Sources */,
+				74D068B32C92DAA9000B0EAC /* Person.swift in Sources */,
 				74D0689B2C92CC12000B0EAC /* AppDelegate.swift in Sources */,
+				74D068AF2C92D767000B0EAC /* PersonsListTableViewController.swift in Sources */,
 				74D0689D2C92CC12000B0EAC /* SceneDelegate.swift in Sources */,
+				74D068B12C92D95E000B0EAC /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
