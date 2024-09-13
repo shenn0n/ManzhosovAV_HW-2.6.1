@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		740CE7DE2C94334D00767E5A /* PersonsListSectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740CE7DD2C94334D00767E5A /* PersonsListSectionTableViewController.swift */; };
+		740CE7E02C94352D00767E5A /* PersonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740CE7DF2C94352D00767E5A /* PersonInfo.swift */; };
 		74D0689B2C92CC12000B0EAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0689A2C92CC12000B0EAC /* AppDelegate.swift */; };
 		74D0689D2C92CC12000B0EAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0689C2C92CC12000B0EAC /* SceneDelegate.swift */; };
 		74D068A22C92CC12000B0EAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D068A02C92CC12000B0EAC /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		740CE7DD2C94334D00767E5A /* PersonsListSectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListSectionTableViewController.swift; sourceTree = "<group>"; };
+		740CE7DF2C94352D00767E5A /* PersonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfo.swift; sourceTree = "<group>"; };
 		74D068972C92CC12000B0EAC /* ManzhosovAV_HW 2.6.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ManzhosovAV_HW 2.6.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74D0689A2C92CC12000B0EAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74D0689C2C92CC12000B0EAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				74D068B22C92DAA9000B0EAC /* Person.swift */,
+				740CE7DF2C94352D00767E5A /* PersonInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,6 +97,7 @@
 			children = (
 				74D068AE2C92D767000B0EAC /* PersonsListTableViewController.swift */,
 				74D068B02C92D95E000B0EAC /* DetailsViewController.swift */,
+				740CE7DD2C94334D00767E5A /* PersonsListSectionTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -185,7 +191,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				74D068B32C92DAA9000B0EAC /* Person.swift in Sources */,
+				740CE7E02C94352D00767E5A /* PersonInfo.swift in Sources */,
 				74D0689B2C92CC12000B0EAC /* AppDelegate.swift in Sources */,
+				740CE7DE2C94334D00767E5A /* PersonsListSectionTableViewController.swift in Sources */,
 				74D068AF2C92D767000B0EAC /* PersonsListTableViewController.swift in Sources */,
 				74D0689D2C92CC12000B0EAC /* SceneDelegate.swift in Sources */,
 				74D068B12C92D95E000B0EAC /* DetailsViewController.swift in Sources */,

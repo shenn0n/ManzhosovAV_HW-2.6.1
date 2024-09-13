@@ -15,21 +15,25 @@ struct Person {
 }
 
 extension Person {
-    static func getPersons( names: [String],
-                            surnames: [String],
-                            e_mails: [String],
-                            phoneNumbers: [String] ) -> [Person] {
+    static func getPersons() -> [Person] {
         
-        let names = Array(Set(names))
-        let surnames = Array(Set(surnames))
-        let e_mails = Array(Set(e_mails))
-        let phoneNumbers = Array(Set(phoneNumbers))
+        let personInfo = PersonInfo()
+        let names = Array(Set(personInfo.names))
+        let surnames = Array(Set(personInfo.surnames))
+        let e_mails = Array(Set(personInfo.e_mails))
+        let phoneNumbers = Array(Set(personInfo.phoneNumbers))
         var persons: [Person] = []
         
-        for n in 0...9 {
+        for n in 0...personInfo.names.count - 1 {
             persons.append(Person(name: names[n], surname: surnames[n], e_mail: e_mails[n], phoneNumber: phoneNumbers[n]))
         }
         return persons
+    }
+    static func getPersonsInfo(person:Person) -> [String] {
+        var arrInfo:[String] = []
+        arrInfo.append(person.e_mail)
+        arrInfo.append(person.phoneNumber)
+        return arrInfo
     }
 }
 
